@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees in Spotlight</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        .page {
+            width: 794px;
+            height: 1123px;
+            background-color: #f2e8d5;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #d6d6d6;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            font-size: 12px;
+            color: #666;
+            font-weight: 500;
+        }
+        .title-bar {
+            background-color: #21b6b7;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .title-text {
+            color: white;
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            margin: 0;
+        }
+        .separator-line {
+            height: 2px;
+            background-color: #fff;
+            margin: 8px auto;
+            width: 90%;
+        }
+        .content-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f2e8d5;
+            padding: 0;
+        }
+        .main-content {
+            background-color: white;
+            border: 1px solid #e0d9c7;
+            width: 92%;
+            height: 90%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0 0 0;
+            position: relative;
+        }
+        .spotlight-row {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 10px;
+        }
+        .spotlight-name {
+            font-size: 16px;
+            color: #a89c8a;
+            font-weight: 500;
+            width: 100px;
+            text-align: center;
+        }
+        .spotlight-image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .spotlight-image {
+            width: 180px;
+            height: 140px;
+            background-color: #f3f3f3;
+            border: 1.5px solid #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(-8deg);
+            margin-bottom: 8px;
+        }
+        .spotlight-image .image-icon {
+            color: #bbb;
+            font-size: 60px;
+        }
+        .achievement-label {
+            font-size: 12px;
+            color: #888;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-weight: 500;
+            border-bottom: 1px solid #d6d6d6;
+            width: 180px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .achievement-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: #6d5640;
+            margin: 18px 0 18px 0;
+            letter-spacing: 2px;
+        }
+        .article-text {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #333;
+            width: 90%;
+            margin: 0 auto 10px auto;
+        }
+        .article-text p {
+            margin: 0 0 15px 0;
+            text-align: justify;
+        }
+        .author-info {
+            text-align: right;
+            font-size: 12px;
+            color: #777;
+            font-style: italic;
+            margin: 0 5% 18px 0;
+        }
+        .team-details {
+            width: 94%;
+            margin: 18px auto 0 auto;
+            border: 1px solid #bdbdbd;
+            background: #faf9f7;
+            padding: 10px 18px 10px 18px;
+            font-size: 12px;
+            color: #444;
+            box-sizing: border-box;
+        }
+        .team-details-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: #444;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+            background: #f5f5f5;
+            padding: 2px 8px;
+            display: inline-block;
+            border: 1px solid #d6d6d6;
+        }
+        .footer {
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+            margin-bottom: 15px;
+            font-size: 11px;
+            color: #b99c7a;
+            letter-spacing: 1px;
+        }
+        .footer span {
+            margin: 0 8px;
+        }
+        .footer-dot {
+            color: #ff6347;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div>CDO INDIA</div>
+            <div>MARCH 2023</div>
+        </div>
+        <div class="title-bar">
+            <h1 class="title-text">Employees in Spotlight</h1>
+            <div class="separator-line"></div>
+        </div>
+        <div class="content-area">
+            <div class="main-content">
+                <div class="spotlight-row">
+                    <div class="spotlight-name">NAME</div>
+                    <div class="spotlight-image-container">
+                        <div class="spotlight-image">
+                            <span class="image-icon">&#128247;</span>
+                        </div>
+                        <div class="achievement-label">ACHIEVEMENT</div>
+                    </div>
+                    <div class="spotlight-name">NAME</div>
+                </div>
+                <div class="achievement-title">WHAT ACHIEVEMENT</div>
+                <div class="article-text">
+                    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was <a href="#" style="color:#1a4a8a;text-decoration:underline;">popularized</a> in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="article-text">
+                    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was <a href="#" style="color:#1a4a8a;text-decoration:underline;">popularized</a> in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="author-info">AUTHOR NAME</div>
+                <div class="team-details">
+                    <div class="team-details-title">TEAM DETAILS</div>
+                    <div>
+                        <b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was <a href="#" style="color:#1a4a8a;text-decoration:underline;">popularized</a> in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                    </div>
+                </div>
+            </div>
+        <div class="footer">
+            <span>The CDO Insights</span>
+            <span class="footer-dot">•</span>
+            <span>For the CDOers</span>
+            <span class="footer-dot">•</span>
+            <span>By the CDOers</span>
+        </div>
+    </div>
+</body>
+</html> 

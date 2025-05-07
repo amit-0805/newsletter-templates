@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUZZ BUZZ Newsletter</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fff;
+        }
+        
+        .page {
+            width: 850px;
+            height: 1100px; /* Standard PDF height ratio */
+            background-color: #f0e6d2; /* Cream background color */
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .newsletter {
+            width: 800px;
+            height: 1060px;
+            margin: 0 auto;
+            border: 1px solid #d9d0bc;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 20px;
+            border-bottom: 1px solid #ccc;
+            font-size: 11px;
+            color: #333;
+        }
+        
+        .title-bar {
+            background-color: #21b6b7;
+            color: white;
+            padding: 12px 0;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            border-bottom: 1px solid #19908f;
+        }
+        
+        .image-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        .image-box {
+            width: 30%;
+            height: 100px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ddd;
+            position: relative;
+        }
+        
+        .image-placeholder {
+            color: #ccc;
+            font-size: 24px;
+        }
+        
+        .content {
+            padding: 20px;
+        }
+        
+        .article-title {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+            letter-spacing: 1px;
+        }
+        
+        .article-subtitle {
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 20px;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .separator {
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
+        }
+        
+        .article-content {
+            font-size: 12px;
+            line-height: 1.5;
+            color: #333;
+        }
+        
+        .article-content p {
+            margin-bottom: 15px;
+        }
+        
+        .footer {
+            font-size: 11px;
+            text-align: center;
+            padding: 10px;
+            color: #b99c7a;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+            letter-spacing: 1px;
+        }
+        .footer span {
+            margin: 0 8px;
+        }
+        .footer-dot {
+            color: #ff6347;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+
+        .article-metadata {
+            text-align: center;
+            font-size: 10px;
+            font-style: italic;
+            color: #777;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="newsletter">
+            <div class="header">
+                <div>COU MEDIA</div>
+                <div>MARCH 2023</div>
+            </div>
+        <div class="title-bar">
+            BUZZ BUZZ
+        </div>
+        <div class="image-section">
+            <div class="image-box">
+                <div class="image-placeholder">⟨IMG⟩</div>
+            </div>
+            <div class="image-box">
+                <div class="image-placeholder">⟨IMG⟩</div>
+            </div>
+            <div class="image-box">
+                <div class="image-placeholder">⟨IMG⟩</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="article-title">SENIOR LEADERSHIP TOUR</div>
+            <div class="article-subtitle">ENHANCING COLLABORATION AND INNOVATION AT COMPANY</div>
+            
+            <div class="article-metadata">ISSUE 10.3 • MARCH 2023</div>
+            
+            <div class="article-content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <span>The CDO Insights</span>
+            <span class="footer-dot">•</span>
+            <span>For the CDOers</span>
+            <span class="footer-dot">•</span>
+            <span>By the CDOers</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Gallery & Fun Facts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .page {
+            width: 794px;
+            height: 1123px;
+            background-color: #f2e8d5;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #d6d6d6;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            font-size: 12px;
+            color: #666;
+            font-weight: 500;
+        }
+        .title-bar {
+            background-color: #21b6b7;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .title-text {
+            color: white;
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            margin: 0;
+        }
+        .separator-line {
+            height: 2px;
+            background-color: #fff;
+            margin: 8px auto;
+            width: 90%;
+        }
+        .content-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f2e8d5;
+            padding: 0;
+            justify-content: flex-start;
+        }
+        .team-gallery {
+            width: 97%;
+            background: #fff;
+            border: 1px solid #e0d9c7;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border-radius: 8px;
+            margin: 32px 0 0 0;
+            padding: 28px 18px 18px 18px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 18px 12px;
+            align-items: start;
+            justify-items: center;
+            min-height: 350px;
+            max-height: 420px;
+            box-sizing: border-box;
+        }
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 10px 6px 8px 6px;
+            width: 120px;
+            box-sizing: border-box;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+        }
+        .member-image {
+            width: 48px;
+            height: 48px;
+            background-color: #f3f3f3;
+            border: 1.5px solid #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ccc;
+            font-size: 24px;
+            border-radius: 50%;
+            margin-bottom: 8px;
+        }
+        .member-name {
+            font-size: 13px;
+            font-weight: 700;
+            color: #444;
+            margin-bottom: 2px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .member-role {
+            font-size: 11px;
+            color: #888;
+            text-align: center;
+            margin-bottom: 2px;
+        }
+        .fun-facts-box {
+            width: 97%;
+            background: #fffbe6;
+            border-left: 6px solid #21b6b7;
+            border-radius: 8px;
+            margin: 18px 0 18px 0;
+            padding: 18px 24px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            min-height: 90px;
+            max-height: 160px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .fun-facts-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #21b6b7;
+            margin-bottom: 8px;
+        }
+        .fun-facts-list {
+            font-size: 13px;
+            color: #444;
+            margin: 0;
+            padding-left: 16px;
+        }
+        .footer {
+            font-size: 11px;
+            text-align: center;
+            padding: 10px 0;
+            color: #b99c7a;
+            letter-spacing: 1px;
+            margin-top: auto;
+            margin-bottom: 15px;
+        }
+        .footer span {
+            margin: 0 8px;
+        }
+        .footer-dot {
+            color: #ff6347;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div>CDO INDIA</div>
+            <div>MARCH 2023</div>
+        </div>
+        <div class="title-bar">
+            <h1 class="title-text">Team Gallery</h1>
+            <div class="separator-line"></div>
+        </div>
+        <div class="content-area">
+            <div class="team-gallery">
+                <div class="team-member">
+                    <div class="member-image">&#128100;</div>
+                    <div class="member-name">Alice</div>
+                    <div class="member-role">Project Manager</div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">&#128100;</div>
+                    <div class="member-name">Bob</div>
+                    <div class="member-role">Developer</div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">&#128100;</div>
+                    <div class="member-name">Carol</div>
+                    <div class="member-role">Designer</div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">&#128100;</div>
+                    <div class="member-name">David</div>
+                    <div class="member-role">QA Lead</div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">&#128100;</div>
+                    <div class="member-name">Eve</div>
+                    <div class="member-role">Business Analyst</div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">&#128100;</div>
+                    <div class="member-name">Frank</div>
+                    <div class="member-role">DevOps Engineer</div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">&#128100;</div>
+                    <div class="member-name">Grace</div>
+                    <div class="member-role">HR Manager</div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">&#128100;</div>
+                    <div class="member-name">Heidi</div>
+                    <div class="member-role">Support Lead</div>
+                </div>
+            </div>
+            <div class="fun-facts-box">
+                <div class="fun-facts-title">Fun Facts About Our Team</div>
+                <ul class="fun-facts-list">
+                    <li>We speak a total of 10 languages!</li>
+                    <li>Our team has completed 50+ successful projects together.</li>
+                    <li>We celebrate "Fun Fridays" every month.</li>
+                    <li>Someone on the team is a national chess champion!</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <span>The CDO Insights</span>
+            <span class="footer-dot">•</span>
+            <span>For the CDOers</span>
+            <span class="footer-dot">•</span>
+            <span>By the CDOers</span>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Timeline & Story</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .page {
+            width: 794px;
+            height: 1123px;
+            background-color: #f2e8d5;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #d6d6d6;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            font-size: 12px;
+            color: #666;
+            font-weight: 500;
+        }
+        .title-bar {
+            background-color: #21b6b7;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .title-text {
+            color: white;
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            margin: 0;
+        }
+        .separator-line {
+            height: 2px;
+            background-color: #fff;
+            margin: 8px auto;
+            width: 90%;
+        }
+        .content-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f2e8d5;
+            padding: 0;
+            justify-content: flex-start;
+        }
+        .timeline-section {
+            width: 95%;
+            background: #fff;
+            border: 1px solid #e0d9c7;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border-radius: 8px;
+            margin: 28px 0 0 0;
+            padding: 28px 18px 18px 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 200px;
+            max-height: 320px;
+            box-sizing: border-box;
+        }
+        .timeline-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #21b6b7;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            position: relative;
+            margin-bottom: 8px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 6%;
+            right: 6%;
+            height: 3px;
+            background: #21b6b7;
+            z-index: 0;
+        }
+        .milestone {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 22%;
+        }
+        .milestone-image {
+            width: 40px;
+            height: 40px;
+            background-color: #f3f3f3;
+            border: 2px solid #21b6b7;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #21b6b7;
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+        .milestone-year {
+            font-size: 13px;
+            font-weight: 700;
+            color: #444;
+            margin-bottom: 2px;
+        }
+        .milestone-desc {
+            font-size: 11px;
+            color: #666;
+            text-align: center;
+        }
+        .employee-story-section {
+            width: 95%;
+            background: #fff;
+            border: 1px solid #e0d9c7;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border-radius: 8px;
+            padding: 28px 18px 18px 18px;
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            min-height: 200px;
+            max-height: 320px;
+            box-sizing: border-box;
+            margin-top: 24px;
+        }
+        .employee-story-image {
+            width: 80px;
+            height: 80px;
+            background-color: #f3f3f3;
+            border: 2px solid #21b6b7;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #21b6b7;
+            font-size: 36px;
+            flex-shrink: 0;
+        }
+        .employee-story-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .employee-story-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #444;
+            margin-bottom: 8px;
+        }
+        .employee-story-role {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        .employee-story-content {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #333;
+            text-align: justify;
+        }
+        .footer {
+            font-size: 11px;
+            text-align: center;
+            padding: 10px 0;
+            color: #b99c7a;
+            letter-spacing: 1px;
+            margin-top: auto;
+            margin-bottom: 15px;
+        }
+        .footer span {
+            margin: 0 8px;
+        }
+        .footer-dot {
+            color: #ff6347;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div>CDO INDIA</div>
+            <div>MARCH 2023</div>
+        </div>
+        <div class="title-bar">
+            <h1 class="title-text">Employee Timeline & Story</h1>
+            <div class="separator-line"></div>
+        </div>
+        <div class="content-area">
+            <div class="timeline-section">
+                <div class="timeline-title">Career Milestones</div>
+                <div class="timeline">
+                    <div class="milestone">
+                        <div class="milestone-image">&#128100;</div>
+                        <div class="milestone-year">2018</div>
+                        <div class="milestone-desc">Joined the company as a Junior Analyst.</div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-image">&#128100;</div>
+                        <div class="milestone-year">2020</div>
+                        <div class="milestone-desc">Promoted to Senior Analyst for outstanding performance.</div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-image">&#128100;</div>
+                        <div class="milestone-year">2022</div>
+                        <div class="milestone-desc">Led a major project to successful completion.</div>
+                    </div>
+                    <div class="milestone">
+                        <div class="milestone-image">&#128100;</div>
+                        <div class="milestone-year">2023</div>
+                        <div class="milestone-desc">Recognized as Employee of the Year.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="employee-story-section">
+                <div class="employee-story-image">&#128100;</div>
+                <div class="employee-story-details">
+                    <div class="employee-story-title">Jane Doe</div>
+                    <div class="employee-story-role">Lead Data Scientist</div>
+                    <div class="employee-story-content">
+                        Jane's journey at the company has been marked by continuous growth and achievement. Starting as a Junior Analyst, she quickly demonstrated her analytical prowess and leadership skills. Her dedication led to a rapid promotion and the opportunity to lead high-impact projects. Jane's story is a testament to the power of perseverance, innovation, and teamwork.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <span>The CDO Insights</span>
+            <span class="footer-dot">•</span>
+            <span>For the CDOers</span>
+            <span class="footer-dot">•</span>
+            <span>By the CDOers</span>
+        </div>
+    </div>
+</body>
+</html> 

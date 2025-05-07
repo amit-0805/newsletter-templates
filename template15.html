@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Newsletter with Quote</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .page {
+            width: 794px;
+            height: 1123px;
+            background-color: #f2e8d5;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #d6d6d6;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            font-size: 12px;
+            color: #666;
+            font-weight: 500;
+        }
+        .title-bar {
+            background-color: #21b6b7;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .title-text {
+            color: white;
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            margin: 0;
+        }
+        .separator-line {
+            height: 2px;
+            background-color: #fff;
+            margin: 8px auto;
+            width: 90%;
+        }
+        .hero-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 24px 32px 18px 32px;
+        }
+        .hero-image-box {
+            width: 29%;
+            height: 110px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ddd;
+        }
+        .hero-image-placeholder {
+            color: #ccc;
+            font-size: 32px;
+        }
+        .main-article {
+            background: #fff;
+            margin: 0 32px 0 32px;
+            padding: 32px 32px 24px 32px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border: 1px solid #e0d9c7;
+            margin-bottom: 24px;
+        }
+        .article-title {
+            text-align: center;
+            font-size: 26px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        .article-subtitle {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 12px;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .article-author {
+            text-align: center;
+            font-size: 12px;
+            font-style: italic;
+            color: #888;
+            margin-bottom: 18px;
+        }
+        .article-content {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+        .quote-box {
+            background: #fffbe6;
+            border-left: 6px solid #21b6b7;
+            margin: 0 32px 24px 32px;
+            padding: 24px 32px;
+            font-size: 18px;
+            font-style: italic;
+            color: #444;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            border-radius: 6px;
+            position: relative;
+        }
+        .quote-box:before {
+            content: '\201C';
+            font-size: 38px;
+            color: #21b6b7;
+            position: absolute;
+            left: 16px;
+            top: 8px;
+        }
+        .footer {
+            font-size: 11px;
+            text-align: center;
+            padding: 10px 0;
+            color: #b99c7a;
+            letter-spacing: 1px;
+            margin-top: auto;
+            margin-bottom: 15px;
+        }
+        .footer span {
+            margin: 0 8px;
+        }
+        .footer-dot {
+            color: #ff6347;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div>CDO INDIA</div>
+            <div>MARCH 2023</div>
+        </div>
+        <div class="title-bar">
+            <h1 class="title-text">Classic Newsletter</h1>
+            <div class="separator-line"></div>
+        </div>
+        <div class="hero-section">
+            <div class="hero-image-box">
+                <div class="hero-image-placeholder">⟨IMG⟩</div>
+            </div>
+            <div class="hero-image-box">
+                <div class="hero-image-placeholder">⟨IMG⟩</div>
+            </div>
+            <div class="hero-image-box">
+                <div class="hero-image-placeholder">⟨IMG⟩</div>
+            </div>
+        </div>
+        <div class="main-article">
+            <div class="article-title">SENIOR LEADERSHIP TOUR</div>
+            <div class="article-subtitle">ENHANCING COLLABORATION AND INNOVATION AT COMPANY</div>
+            <div class="article-author">By John Doe</div>
+            <div class="article-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+            <div class="article-content">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </div>
+        </div>
+        <div class="quote-box">
+            "The only way to do great work is to love what you do." – Steve Jobs
+        </div>
+        <div class="footer">
+            <span>The CDO Insights</span>
+            <span class="footer-dot">•</span>
+            <span>For the CDOers</span>
+            <span class="footer-dot">•</span>
+            <span>By the CDOers</span>
+        </div>
+    </div>
+</body>
+</html> 

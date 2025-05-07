@@ -1,0 +1,35 @@
+{
+  "template1.html": "A classic newsletter layout with a cream background and a white content box. The top features a header with the organization name and date, followed by a bold turquoise title bar. Below is a hero section with three image placeholders in a row. The main content area includes a large, centered article title, a subtitle, and metadata, followed by several paragraphs of article content. The footer contains the CDO Insights tagline. This template is ideal for general news, event recaps, or feature stories.",
+
+  "template2.html": "This template combines a prominent title and author block at the top with a main article section that includes an image. The lower half features a winners or spotlight grid, displaying multiple individuals with their images and names. The design uses a cream background, white content areas, and turquoise accents, making it perfect for combining a main story with a showcase of top performers or team members.",
+
+  "template3.html": "A single-article template with a large image, article title, subtitle, author, and multi-paragraph content. The layout is clean and focused, with a white content box and turquoise header, making it suitable for in-depth features, interviews, or technical write-ups.",
+
+  "template4.html": "A unique layout designed for a special section or theme, such as 'Security as a Culture' or 'Learning @ CDO'. It likely features a different arrangement of images, articles, or spotlights, providing variety in the newsletter series while maintaining visual consistency.",
+
+  "template5.html": "An Employee Spotlight template featuring a single employee. The top half of the page has the employee's image on the left and their details—name, role, and description—on the right. The design is clean, with a white content box, turquoise header, and cream background, ideal for highlighting individual achievements or profiles.",
+
+  "template6.html": "A layout reserved for a special section or unique content, such as birthdays, anniversaries, or a special announcement. It maintains the visual consistency of the series and provides a dedicated space for celebratory or noteworthy content.",
+
+  "template7.html": "A large-topic template with a big image, topic title, subtitle, author, and multi-paragraph article content. The image is prominently displayed, making this template suitable for deep dives, feature stories, or major announcements.",
+
+  "template8.html": "A template designed for a specific recurring section or feature, possibly including a grid, gallery, or alternating content blocks. It is visually consistent with the rest of the series and provides a flexible layout for various types of content.",
+
+  "template9.html": "A gallery-style template with a grid of images, such as event photos or team activities, alongside a main article title, subtitle, and content. The layout is ideal for visual recaps, event highlights, or showcasing multiple projects or teams.",
+
+  "template10.html": "A dual-article layout with two large article boxes stacked vertically. The first article has an image on the left and details on the right, while the second article reverses this. Each article includes a title, subtitle, author, and two paragraphs of content, making it perfect for featuring two major stories or interviews.",
+
+  "template11.html": "A triple-article layout with three stacked article boxes. The first and third articles have images on the left, while the middle article has the image on the right. Each article includes a title, subtitle, author, and two paragraphs of content, making this template ideal for issues with multiple features or a roundup of stories.",
+
+  "template12.html": "A two-employee spotlight template. The top half features Employee 1 with their image on the left and details on the right, while the bottom half features Employee 2 with the image on the right and details on the left. Each section is spacious, with room for a detailed description, making it suitable for highlighting two key team members.",
+
+  "template13.html": "A split spotlight template with a 75/25 layout. The top 75% of the page is dedicated to Employee 1, with a large image and detailed content, while the bottom 25% features Employee 2 in a more compact section with a smaller image and brief description. This template is ideal for emphasizing a primary spotlight while still recognizing another contributor.",
+
+  "template14.html": "A winners or spotlight grid page. The main content area is a 3x2 grid displaying six employees, each with a circular image, name, and a short award or recognition line, such as 'Outstanding Performance' or 'Team Player Award'. The design is bright and celebratory, perfect for recognizing top performers, contest winners, or team achievements.",
+
+  "template15.html": "A classic newsletter with a quote highlight. The header and footer are standard. The hero section features a row of three images. The main article area includes a large, centered article with title, subtitle, author, and content. Below the article is a visually distinct quote box with a motivational or relevant quote, making this template ideal for inspirational issues or editions with a central theme.",
+
+  "template16.html": "An Employee Timeline/Story template. The top section is a horizontal timeline with four milestones, each showing an image, year, and short description, such as 'Joined as Junior Analyst' or 'Promoted to Senior Analyst'. The bottom section is a featured employee story, with a circular image, name, role, and a detailed narrative. The layout is compact and visually balanced, perfect for career journeys or anniversary features.",
+
+  "template17.html": "A Team Gallery with Fun Facts. The main section is a grid of eight team members, each with an image, name, and role, arranged in two rows of four. Below the gallery is a colored fun facts box with a list of trivia or fun facts about the team or company. The design is compact, visually balanced, and ideal for team introductions, culture highlights, or lighthearted newsletter sections."
+}

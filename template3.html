@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech TIDBITS Newsletter</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        .page {
+            width: 794px;
+            height: 1123px;
+            background-color: #f2e8d5;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #d6d6d6;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            font-size: 12px;
+            color: #666;
+            font-weight: 500;
+        }
+        .title-bar {
+            background-color: #21b6b7;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .title-text {
+            color: white;
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            margin: 0;
+        }
+        .separator-line {
+            height: 2px;
+            background-color: #fff;
+            margin: 8px auto;
+            width: 90%;
+        }
+        .content-area {
+            padding: 25px;
+            background-color: #f2e8d5;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .main-content {
+            background-color: white;
+            border: 1px solid #e0d9c7;
+            padding: 30px 30px 20px 30px;
+            margin: 0 auto 20px auto;
+            width: 100%;
+            max-width: 700px;
+            box-sizing: border-box;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .article-title {
+            text-align: center;
+            font-size: 26px;
+            font-weight: 700;
+            color: #444;
+            margin: 0 0 8px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .article-subtitle {
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .author-info {
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            font-style: italic;
+            margin-bottom: 18px;
+        }
+        .article-divider {
+            border: none;
+            border-top: 1px solid #e0d9c7;
+            margin: 10px auto 18px auto;
+            width: 120px;
+        }
+        .content-image {
+            float: left;
+            width: 120px;
+            height: 90px;
+            margin: 0 18px 10px 0;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-placeholder {
+            color: #ccc;
+            font-size: 24px;
+        }
+        .article-text {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .article-text p {
+            margin: 0 0 15px 0;
+            text-align: justify;
+        }
+        .read-more {
+            display: block;
+            margin: 18px 0 0 0;
+            font-size: 13px;
+            color: #1a4a8a;
+            font-weight: 500;
+            text-decoration: underline;
+            text-align: left;
+            cursor: pointer;
+        }
+        .footer {
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+            margin-bottom: 15px;
+            font-size: 11px;
+            color: #b99c7a;
+            letter-spacing: 1px;
+        }
+        .footer span {
+            margin: 0 8px;
+        }
+        .footer-dot {
+            color: #ff6347;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div>CDO INDIA</div>
+            <div>MARCH 2023</div>
+        </div>
+        <div class="title-bar">
+            <h1 class="title-text">Tech TIDBITS</h1>
+            <div class="separator-line"></div>
+        </div>
+        <div class="content-area">
+            <div class="main-content">
+                <div class="article-title">TECH ARTICLE NAME</div>
+                <div class="article-subtitle">ONE LINER ABOUT ARTICLE</div>
+                <div class="author-info">AUTHOR NAME</div>
+                <hr class="article-divider" />
+                <div class="article-text">
+                    <div class="content-image">
+                        <div class="image-placeholder">⟨IMG⟩</div>
+                    </div>
+                    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was <a href="#" style="color:#1a4a8a;text-decoration:underline;">popularized</a> in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was <a href="#" style="color:#1a4a8a;text-decoration:underline;">popularized</a> in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was <a href="#" style="color:#1a4a8a;text-decoration:underline;">popularized</a> in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was <a href="#" style="color:#1a4a8a;text-decoration:underline;">popularized</a> in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <a class="read-more" href="#">Read Full Article</a>
+            </div>
+        </div>
+        <div class="footer">
+            <span>The CDO Insights</span>
+            <span class="footer-dot">•</span>
+            <span>For the CDOers</span>
+            <span class="footer-dot">•</span>
+            <span>By the CDOers</span>
+        </div>
+    </div>
+</body>
+</html> 

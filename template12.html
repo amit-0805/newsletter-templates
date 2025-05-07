@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Spotlight - Two Employees</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        .page {
+            width: 794px;
+            height: 1123px;
+            background-color: #f2e8d5;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #d6d6d6;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            font-size: 12px;
+            color: #666;
+            font-weight: 500;
+        }
+        .title-bar {
+            background-color: #21b6b7;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .title-text {
+            color: white;
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            margin: 0;
+        }
+        .separator-line {
+            height: 2px;
+            background-color: #fff;
+            margin: 8px auto;
+            width: 90%;
+        }
+        .content-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f2e8d5;
+            padding: 0;
+            justify-content: flex-start;
+        }
+        .dual-employee {
+            width: 98%;
+            height: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2%;
+        }
+        .employee-box {
+            background-color: white;
+            border: 1px solid #e0d9c7;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 49%;
+            box-sizing: border-box;
+            padding: 0 30px;
+            position: relative;
+        }
+        .employee-box.left-img .image-placeholder {
+            order: 0;
+            margin-right: 30px;
+            margin-left: 0;
+        }
+        .employee-box.right-img .image-placeholder {
+            order: 1;
+            margin-left: 30px;
+            margin-right: 0;
+        }
+        .image-placeholder {
+            width: 180px;
+            height: 140px;
+            background-color: #f3f3f3;
+            border: 1.5px solid #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ccc;
+            font-size: 60px;
+            flex-shrink: 0;
+        }
+        .employee-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .employee-name {
+            text-align: left;
+            font-size: 22px;
+            font-weight: 700;
+            color: #444;
+            margin: 0 0 8px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .employee-role {
+            text-align: left;
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .employee-description {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #333;
+            margin: 0 0 10px 0;
+            text-align: justify;
+        }
+        .footer {
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+            margin-bottom: 15px;
+            font-size: 11px;
+            color: #b99c7a;
+            letter-spacing: 1px;
+        }
+        .footer span {
+            margin: 0 8px;
+        }
+        .footer-dot {
+            color: #ff6347;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <div>CDO INDIA</div>
+            <div>MARCH 2023</div>
+        </div>
+        <div class="title-bar">
+            <h1 class="title-text">Employee Spotlight</h1>
+            <div class="separator-line"></div>
+        </div>
+        <div class="content-area">
+            <div class="dual-employee">
+                <div class="employee-box left-img">
+                    <div class="image-placeholder">&#128100;</div>
+                    <div class="employee-details">
+                        <div class="employee-name">EMPLOYEE NAME 1</div>
+                        <div class="employee-role">ROLE TITLE 1</div>
+                        <div class="employee-description">
+                            Brief description about the employee's achievements and contributions to the organization. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Quisque et nisi euismod, facilisis arcu a, fermentum eros. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        </div>
+                    </div>
+                </div>
+                <div class="employee-box right-img">
+                    <div class="employee-details">
+                        <div class="employee-name">EMPLOYEE NAME 2</div>
+                        <div class="employee-role">ROLE TITLE 2</div>
+                        <div class="employee-description">
+                            Brief description about the employee's achievements and contributions to the organization. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Quisque et nisi euismod, facilisis arcu a, fermentum eros. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        </div>
+                    </div>
+                    <div class="image-placeholder">&#128100;</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <span>The CDO Insights</span>
+            <span class="footer-dot">•</span>
+            <span>For the CDOers</span>
+            <span class="footer-dot">•</span>
+            <span>By the CDOers</span>
+        </div>
+    </div>
+</body>
+</html> 
